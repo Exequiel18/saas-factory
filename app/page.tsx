@@ -14,9 +14,6 @@ import { ConfianzaSeguridad } from "@/components/confianza-seguridad"
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
-  const { scrollY } = useScroll()
-  const opacity = useTransform(scrollY, [0, 300], [1, 0])
-  const scale = useTransform(scrollY, [0, 300], [1, 0.95])
 
   useEffect(() => {
     setMounted(true)
