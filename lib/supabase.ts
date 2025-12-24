@@ -1,18 +1,33 @@
 // Mock implementation for build time
 // In production, this should use the real Supabase client
-const createMockQuery = () => ({
-  select: (columns?: string, options?: { count?: string; head?: boolean }) => ({
-    eq: (column: string, value: any) => createMockQuery(),
-    gte: (column: string, value: any) => createMockQuery(),
-    lte: (column: string, value: any) => createMockQuery(),
+const createMockQuery = () => {
+  const queryBuilder = {
+    eq: (column: string, value: any) => queryBuilder,
+    gte: (column: string, value: any) => queryBuilder,
+    lte: (column: string, value: any) => queryBuilder,
     data: [],
     error: null,
     count: 0
-  }),
-  insert: (values: any) => ({ error: null, data: null }),
-  update: (values: any) => createMockQuery(),
-  delete: () => createMockQuery()
-})
+  }
+  
+  return {
+    select: (columns?: string, options?: { count?: string; head?: boolean }) => {
+      // Si tiene opciones (count, head), devolver resultado directo
+      if (options?.count || options?.head) {
+        return {
+          data: null,
+          error: null,
+          count: 0
+        }
+      }
+      // Si no, devolver query builder
+      return queryBuilder
+    },
+    insert: (values: any) => ({ error: null, data: null }),
+    update: (values: any) => queryBuilder,
+    delete: () => queryBuilder
+  }
+}
 
 export const supabase = {
   from: (table: string) => createMockQuery()
