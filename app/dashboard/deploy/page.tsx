@@ -141,14 +141,136 @@ export default function DeployPage() {
   return (
     <div className="container mx-auto px-6 py-12">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-8">
-          <h1 className="text-4xl font-black text-slate-900 mb-2">
-            🚀 Deploy Automático Completo
-          </h1>
-          <p className="text-slate-600">
-            Dá permisos y el sistema hace TODO por vos. En 5 minutos está online.
-          </p>
-        </div>
+            <div className="mb-8">
+              <h1 className="text-4xl font-black text-slate-900 mb-2">
+                🚀 Deploy Automático Completo
+              </h1>
+              <p className="text-slate-600">
+                Dá permisos y el sistema hace TODO por vos. En 5 minutos está online.
+              </p>
+            </div>
+
+            {/* Sección de Configurar Webhook */}
+            <Card className="mb-8 border-2 border-amber-500 bg-amber-50">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-amber-900">
+                  🔧 Configurar Webhook de Mercado Pago
+                </CardTitle>
+                <CardDescription className="text-amber-800">
+                  Solo necesitás poner el secret del webhook. El resto ya está listo.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {/* Paso 1: URL del Webhook */}
+                <div>
+                  <Label className="text-amber-900 font-bold mb-2 block">
+                    1️⃣ URL del Webhook (Copiá esto)
+                  </Label>
+                  <div className="flex gap-2">
+                    <Input
+                      value="https://saas-factory-antigravity.vercel.app/api/mercadopago/webhook"
+                      readOnly
+                      className="bg-white border-amber-300"
+                    />
+                    <Button
+                      onClick={() => {
+                        navigator.clipboard.writeText("https://saas-factory-antigravity.vercel.app/api/mercadopago/webhook")
+                        alert('URL copiada!')
+                      }}
+                      variant="outline"
+                      className="border-amber-300"
+                    >
+                      Copiar
+                    </Button>
+                  </div>
+                </div>
+
+                {/* Paso 2: Ir a Mercado Pago */}
+                <div>
+                  <Label className="text-amber-900 font-bold mb-2 block">
+                    2️⃣ Configurar en Mercado Pago
+                  </Label>
+                  <div className="bg-white/80 rounded-lg p-4 space-y-2 text-sm text-amber-900">
+                    <p className="font-bold">Pasos:</p>
+                    <ol className="list-decimal list-inside space-y-1">
+                      <li>Ve a: <a href="https://www.mercadopago.com.ar/developers/panel" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Mercado Pago Developers</a></li>
+                      <li>Click en: <strong>Webhooks</strong></li>
+                      <li>Click en: <strong>Crear webhook</strong></li>
+                      <li>Pegá la URL de arriba</li>
+                      <li>Seleccioná eventos: <strong>payment.created</strong> y <strong>payment.updated</strong></li>
+                      <li>Click en: <strong>Crear</strong></li>
+                      <li>Copiá el <strong>secret del webhook</strong> (aparece después de crear)</li>
+                    </ol>
+                  </div>
+                  <a
+                    href="https://www.mercadopago.com.ar/developers/panel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block"
+                  >
+                    <Button className="bg-blue-600 hover:bg-blue-700">
+                      Abrir Mercado Pago Developers
+                    </Button>
+                  </a>
+                </div>
+
+                {/* Paso 3: Pegar Secret */}
+                <div>
+                  <Label htmlFor="webhookSecret" className="text-amber-900 font-bold mb-2 block">
+                    3️⃣ Pegar Secret del Webhook
+                  </Label>
+                  <Input
+                    id="webhookSecret"
+                    type="text"
+                    placeholder="Pegá el secret aquí..."
+                    className="bg-white border-amber-300"
+                  />
+                  <p className="text-xs text-amber-700 mt-1">
+                    Este es el secret que te dio Mercado Pago después de crear el webhook.
+                  </p>
+                </div>
+
+                {/* Paso 4: Agregar a Vercel */}
+                <div>
+                  <Label className="text-amber-900 font-bold mb-2 block">
+                    4️⃣ Agregar a Vercel (IMPORTANTE)
+                  </Label>
+                  <div className="bg-white/80 rounded-lg p-4 space-y-2 text-sm text-amber-900">
+                    <p className="font-bold">Pasos:</p>
+                    <ol className="list-decimal list-inside space-y-1">
+                      <li>Ve a: <a href="https://vercel.com/dashboard" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Vercel Dashboard</a></li>
+                      <li>Click en: <strong>saas-factory-antigravity</strong></li>
+                      <li>Settings → <strong>Environment Variables</strong></li>
+                      <li>Click en: <strong>Add New</strong></li>
+                      <li>Key: <code className="bg-amber-100 px-1 rounded">MERCADO_PAGO_WEBHOOK_SECRET</code></li>
+                      <li>Value: <strong>Pegá el secret que copiaste</strong></li>
+                      <li>Seleccioná: <strong>Production, Preview, Development</strong></li>
+                      <li>Click en: <strong>Save</strong></li>
+                    </ol>
+                  </div>
+                  <a
+                    href="https://vercel.com/dashboard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block"
+                  >
+                    <Button className="bg-slate-700 hover:bg-slate-600">
+                      Abrir Vercel Dashboard
+                    </Button>
+                  </a>
+                </div>
+
+                {/* Resumen */}
+                <div className="bg-green-100 border border-green-300 rounded-lg p-4">
+                  <p className="text-sm font-bold text-green-900 mb-2">✅ Resumen:</p>
+                  <ul className="text-xs text-green-800 space-y-1">
+                    <li>✅ URL del webhook: <code className="bg-green-200 px-1 rounded">https://saas-factory-antigravity.vercel.app/api/mercadopago/webhook</code></li>
+                    <li>✅ Eventos: <code className="bg-green-200 px-1 rounded">payment.created</code> y <code className="bg-green-200 px-1 rounded">payment.updated</code></li>
+                    <li>✅ Variable en Vercel: <code className="bg-green-200 px-1 rounded">MERCADO_PAGO_WEBHOOK_SECRET</code></li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
 
         {/* Instrucciones para obtener tokens */}
         <Card className="mb-8 bg-blue-50 border-blue-200">
