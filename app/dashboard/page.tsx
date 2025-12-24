@@ -71,6 +71,11 @@ export default async function DashboardPage() {
                 🚀 Deploy Automático
               </Button>
             </Link>
+            <Link href="/configurar-webhook">
+              <Button variant="ghost" size="sm" className="bg-amber-50 text-amber-700 hover:bg-amber-100 font-bold">
+                🔧 Configurar Webhook
+              </Button>
+            </Link>
             <Link href="/dashboard/settings">
               <Button variant="ghost" size="sm">
                 Configuración
@@ -200,6 +205,11 @@ export default async function DashboardPage() {
               <Link href="/dashboard/deploy" className="block">
                 <Button variant="outline" className="w-full justify-start bg-red-50 text-red-700 hover:bg-red-100 font-bold">
                   🚀 Deploy Automático
+                </Button>
+              </Link>
+              <Link href="/configurar-webhook" className="block">
+                <Button variant="outline" className="w-full justify-start bg-amber-50 text-amber-700 hover:bg-amber-100 font-bold">
+                  🔧 Configurar Webhook MP
                 </Button>
               </Link>
               <Link href="/pricing" className="block">
