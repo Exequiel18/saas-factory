@@ -10,6 +10,7 @@
 import { prisma } from "./prisma"
 import { AutonomousMarketingSystem } from "./autonomous-marketing"
 import { DeploymentMonitorAgent } from "./deployment-monitor-agent"
+import { getAutoHealingAgent } from "./auto-healing-agent"
 
 export interface SystemStatus {
   id: string
@@ -69,6 +70,10 @@ export class CentralCommandAgent {
     // 6. Monitor de Deployment (NUEVO - detecta problemas automáticamente)
     const deployment = await this.getDeploymentStatus()
     systems.push(deployment)
+    
+    // 7. Auto-Healing Agent (NUEVO - soluciona TODO automáticamente)
+    const autoHealing = await this.getAutoHealingStatus()
+    systems.push(autoHealing)
     
     return systems
   }
@@ -357,6 +362,16 @@ export class CentralCommandAgent {
     // Iniciar monitor de deployment
     this.deploymentMonitor = new DeploymentMonitorAgent()
     this.deploymentMonitor.startMonitoring()
+    
+    // Iniciar auto-healing agent (soluciona TODO automáticamente)
+    const autoHealing = getAutoHealingAgent()
+    
+    this.recordEvent({
+      system: 'central',
+      type: 'info',
+      message: 'Auto-Healing Agent iniciado - Soluciona TODO automáticamente',
+      data: { timestamp: new Date() }
+    })
     
     this.recordEvent({
       system: 'central',
