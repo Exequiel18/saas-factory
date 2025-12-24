@@ -7,6 +7,8 @@ import { authOptions } from "@/lib/auth"
 // - SendGrid: https://sendgrid.com
 // - AWS SES: https://aws.amazon.com/ses
 
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
   try {
     const session = await getServerSession(authOptions)

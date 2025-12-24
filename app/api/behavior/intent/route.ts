@@ -5,6 +5,8 @@ import { globalBehaviorPsychology } from "@/lib/behavior-psychology"
  * 🧠 Track behavioral signals and predict purchase intent
  * This endpoint receives user behavior data and returns purchase intent prediction
  */
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
     try {
         const body = await request.json()

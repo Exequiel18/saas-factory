@@ -6,6 +6,8 @@ import { globalAgentRunner } from "@/lib/autonomous-runner"
 /**
  * 🤖 Execute Autonomous Agent
  */
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
     try {
         const session = await getServerSession(authOptions)

@@ -10,6 +10,8 @@ import { prisma } from "@/lib/prisma"
  * para que el motor de IA en n8n tome decisiones autónomas.
  */
 
+
+export const dynamic = 'force-dynamic'
 export async function GET(request: NextRequest) {
     try {
         // Obtener organización (simplificado: primera organización o crear una demo)

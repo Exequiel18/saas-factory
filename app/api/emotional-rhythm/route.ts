@@ -9,6 +9,8 @@ import { getErrorMessage } from "@/lib/utils"
  * 
  * Regla: Nunca más de 1 estímulo fuerte por sesión
  */
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
   try {
     const session = await getServerSession(authOptions)

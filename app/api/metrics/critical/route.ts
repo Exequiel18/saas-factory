@@ -14,6 +14,8 @@ import { getErrorMessage } from "@/lib/utils"
  * - Tiempo promedio para subir de RIESGO a ATENCIÓN
  * - Cuántos abandonan con score alto
  */
+
+export const dynamic = 'force-dynamic'
 export async function GET(request: Request) {
   try {
     const session = await getServerSession(authOptions)

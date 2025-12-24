@@ -4,6 +4,8 @@ import { getCentralAgent } from "@/lib/central-command-agent"
 /**
  * Endpoint que devuelve el estado de todos los sistemas en tiempo real
  */
+
+export const dynamic = 'force-dynamic'
 export async function GET() {
   try {
     const agent = getCentralAgent()

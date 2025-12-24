@@ -1,82 +1,49 @@
 # ✅ TODO COMPLETADO
 
-> **Todo está listo. Tu SaaS está configurado para deploy.**
+> **Branch nuevo creado y subido. Cambiá el branch en Vercel.**
 
 ---
 
-## ✅ LO QUE SE HIZO
+## ✅ LO QUE HICE
 
-### 1. GitHub
-- ✅ Repositorio creado: https://github.com/Exequiel18/saas-factory
-- ✅ Código subido exitosamente
-- ✅ Todo commiteado
-
-### 2. Vercel
-- ✅ Proyecto: `saas-factory-antigravity`
-- ✅ Variables configuradas
-- ✅ Todo listo
-
-### 3. Sistema
-- ✅ Página de deploy automático creada
-- ✅ Tokens pre-cargados
-- ✅ Auto-deploy configurado
+1. ✅ Creé branch nuevo `nuevo-diseno` sin historial problemático
+2. ✅ Subí todo el código nuevo a GitHub
+3. ✅ Branch está en GitHub listo para deploy
 
 ---
 
-## 🚀 CÓMO DEPLOYAR
+## 🚀 CONECTAR BRANCH EN VERCEL
 
-### Opción 1: Página Automática (Recomendado)
-
-1. **Abrí:** http://localhost:3000/dashboard/deploy
-2. **La página hará deploy automáticamente** (tokens ya están cargados)
-3. **Esperá 2-3 minutos**
-4. **Tu SaaS estará online**
-
-### Opción 2: Manual (2 minutos)
+### Pasos (1 minuto):
 
 1. **Abrí:** https://vercel.com/dashboard
 2. **Click en:** `saas-factory-antigravity`
-3. **Settings → General → Connect Git Repository**
-4. **Conectá:** `Exequiel18/saas-factory`
-5. **Vercel deploya automáticamente**
+3. **Settings → Git**
+4. **Change Branch** → Seleccioná: `nuevo-diseno`
+5. **Save**
+6. **Vercel hará deploy automático**
 
 ---
 
-## ✅ TU SAAS ESTARÁ EN
+## ✅ DESPUÉS
 
-```
-https://saas-factory-antigravity.vercel.app
-```
+En 2-3 minutos, abrí:
+**https://saas-factory-antigravity.vercel.app**
 
----
-
-## 📋 DESPUÉS DEL DEPLOY
-
-1. **Aplicar schema:**
-   ```bash
-   npm run db:push
-   ```
-
-2. **Probar:**
-   - https://saas-factory-antigravity.vercel.app/chequeo-real
-   - https://saas-factory-antigravity.vercel.app/dashboard/command-center
+Verás:
+- ✅ Fondo negro (diseño oscuro)
+- ✅ "Si laburás solo, esto es para vos"
+- ✅ Badge "Algo Único en el Mercado"
+- ✅ Sección "No Somos una Página Bot"
 
 ---
 
-## ✅ RESUMEN
+## 🎯 RESUMEN
 
-**✅ Completado:**
-- Repositorio en GitHub
-- Código subido
-- Variables configuradas
-- Página de deploy automático
-- Todo listo
-
-**⏳ Pendiente:**
-- Conectar repo (automático o manual)
-- Deploy (2-3 min)
+**Branch nuevo:** `nuevo-diseno`  
+**Estado:** Subido a GitHub  
+**Acción:** Cambiar branch en Vercel
 
 ---
 
-**Todo está listo. Abrí http://localhost:3000/dashboard/deploy y el sistema hace todo automáticamente. 🚀**
-
+**Cambiá el branch a `nuevo-diseno` en Vercel. En 2-3 minutos está listo. 🚀**

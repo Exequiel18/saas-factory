@@ -4,6 +4,8 @@ import { authOptions } from "@/lib/auth"
 import { globalAlertSystem } from "@/lib/alert-system"
 import { getErrorMessage } from "@/lib/utils"
 
+
+export const dynamic = 'force-dynamic'
 export async function GET() {
   try {
     const session = await getServerSession(authOptions)

@@ -5,6 +5,8 @@ import { getCentralAgent } from "@/lib/central-command-agent"
  * Endpoint para obtener eventos en tiempo real
  * Soporta polling para actualización continua
  */
+
+export const dynamic = 'force-dynamic'
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)

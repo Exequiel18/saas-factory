@@ -2,6 +2,8 @@ import { NextResponse } from "next/server"
 import { supabaseAdmin, saveAutonomousDecision, saveSystemLog } from "@/lib/supabase"
 import { sendSignalToN8n, sendAIMetricsToN8n } from "@/lib/n8n"
 
+export const dynamic = 'force-dynamic'
+
 /**
  * 🛰️ Autonomous Nervous System - Loop Vital
  * 
@@ -18,49 +20,57 @@ export async function GET() {
         const decisions = []
 
         // --- 1. HEALTH CHECK AUTÓNOMO ---
-        const { count: actionCount, error: actionError } = await supabaseAdmin
-            .from('action_executions')
-            .select('*', { count: 'exact', head: true })
+        try {
+            const result = await supabaseAdmin
+                .from('action_executions')
+                .select('*', { count: 'exact', head: true })
+            
+            const actionCount = result.count || 0
+            const actionError = result.error
 
-        if (actionError) throw actionError
+            if (actionError) throw actionError
 
-        // Trigger AI Evaluation (Total Independence Loop)
-        const metricsSent = await sendAIMetricsToN8n()
-        logs.push(`System Healthy. Total executions: ${actionCount}. AI Metrics Sent: ${metricsSent}`)
+            // Trigger AI Evaluation (Total Independence Loop)
+            const metricsSent = await sendAIMetricsToN8n()
+            logs.push(`System Healthy. Total executions: ${actionCount}. AI Metrics Sent: ${metricsSent}`)
 
-        // --- 2. DETECCIÓN DE CUELLOS DE BOTELLA (Quality Guard) ---
-        // Buscamos si hubo muchos rechazos en la última hora
-        const oneHourAgo = new Date(Date.now() - 3600000).toISOString()
-        const { count: rejectionCount } = await supabaseAdmin
-            .from('system_logs')
-            .select('*', { count: 'exact', head: true })
-            .eq('level', 'warn')
-            .eq('source', 'Quality Guard')
-            .gte('created_at', oneHourAgo)
+            // --- 2. DETECCIÓN DE CUELLOS DE BOTELLA (Quality Guard) ---
+            // Buscamos si hubo muchos rechazos en la última hora
+            const oneHourAgo = new Date(Date.now() - 3600000).toISOString()
+            const rejectionResult = await supabaseAdmin
+                .from('system_logs')
+                .select('*', { count: 'exact', head: true })
+                .eq('level', 'warn')
+                .eq('source', 'Quality Guard')
+                .gte('created_at', oneHourAgo)
 
-        if ((rejectionCount || 0) > 5) {
-            const decision = await saveAutonomousDecision({
-                decisionType: "quality_threshold_adjustment",
-                reasoning: `Se detectaron ${rejectionCount} rechazos del Quality Guard en la última hora. El sistema está siendo demasiado estricto o la entrada del usuario es pobre.`,
-                metricsSnapshot: { rejections: rejectionCount },
-                confidenceScore: 0.9,
-                industry: "all"
-            })
-            decisions.push(decision)
+            const rejectionCount = rejectionResult.count || 0
 
-            // Alertar a n8n para que VIPER analice si hay que ajustar los prompts
-            await sendSignalToN8n("quality_alert", {
-                rejections: rejectionCount,
-                message: "High rejection rate in Quality Guard. Analysis required."
-            })
-        }
+            if (rejectionCount > 5) {
+                const decision = await saveAutonomousDecision({
+                    decisionType: "quality_threshold_adjustment",
+                    reasoning: `Se detectaron ${rejectionCount} rechazos del Quality Guard en la última hora. El sistema está siendo demasiado estricto o la entrada del usuario es pobre.`,
+                    metricsSnapshot: { rejections: rejectionCount },
+                    confidenceScore: 0.9,
+                    industry: "all"
+                })
+                decisions.push(decision)
 
-        // --- 3. AUTO-VENTA (Paywall Hits detection) ---
-        const { count: paywallHits } = await supabaseAdmin
-            .from('system_logs')
-            .select('*', { count: 'exact', head: true })
-            .eq('source', 'Revenue Guard')
-            .gte('created_at', oneHourAgo)
+                // Alertar a n8n para que VIPER analice si hay que ajustar los prompts
+                await sendSignalToN8n("quality_alert", {
+                    rejections: rejectionCount,
+                    message: "High rejection rate in Quality Guard. Analysis required."
+                })
+            }
+
+            // --- 3. AUTO-VENTA (Paywall Hits detection) ---
+            const paywallResult = await supabaseAdmin
+                .from('system_logs')
+                .select('*', { count: 'exact', head: true })
+                .eq('source', 'Revenue Guard')
+                .gte('created_at', oneHourAgo)
+
+            const paywallHits = paywallResult.count || 0
 
         if ((paywallHits || 0) > 0) {
             await sendSignalToN8n("sales_intent_loop", {

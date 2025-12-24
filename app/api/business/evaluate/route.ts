@@ -5,6 +5,8 @@ import { globalBusinessEvaluator } from "@/lib/business-evaluator"
 import { prisma } from "@/lib/prisma"
 import { getErrorMessage } from "@/lib/utils"
 
+export const dynamic = 'force-dynamic'
+
 export async function GET(request: Request) {
   try {
     const session = await getServerSession(authOptions)

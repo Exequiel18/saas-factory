@@ -6,6 +6,8 @@ import { globalPredictiveAnalytics } from "@/lib/predictive-analytics"
 /**
  * 🔮 Get Predictive Analytics
  */
+
+export const dynamic = 'force-dynamic'
 export async function GET(request: Request) {
     try {
         const session = await getServerSession(authOptions)

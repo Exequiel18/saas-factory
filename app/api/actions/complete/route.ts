@@ -4,6 +4,8 @@ import { authOptions } from "@/lib/auth"
 import { globalActionTracker } from "@/lib/action-tracker"
 import { getErrorMessage } from "@/lib/utils"
 
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
   try {
     const session = await getServerSession(authOptions)

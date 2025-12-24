@@ -7,6 +7,8 @@ import { globalRevenueOptimizer } from "@/lib/revenue-optimizer"
  * 🤖 Autonomous Revenue Insights API
  * Returns real-time revenue optimization data
  */
+
+export const dynamic = 'force-dynamic'
 export async function GET(request: Request) {
     try {
         const session = await getServerSession(authOptions)

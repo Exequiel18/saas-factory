@@ -5,6 +5,8 @@ import { globalUpsellEngine } from "@/lib/upsell-engine"
 import { globalBusinessEvaluator } from "@/lib/business-evaluator"
 import { getErrorMessage } from "@/lib/utils"
 
+
+export const dynamic = 'force-dynamic'
 export async function GET(request: Request) {
   try {
     const session = await getServerSession(authOptions)

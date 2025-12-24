@@ -9,6 +9,8 @@ import { getErrorMessage } from "@/lib/utils"
  * 
  * No exponer al usuario. Solo loguear.
  */
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
   try {
     const session = await getServerSession(authOptions)

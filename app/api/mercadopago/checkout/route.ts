@@ -17,6 +17,8 @@ const PLANS = {
   },
 }
 
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
   try {
     const session = await getServerSession(authOptions)

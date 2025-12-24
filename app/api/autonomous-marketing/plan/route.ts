@@ -5,6 +5,8 @@ import { AutonomousMarketingSystem } from "@/lib/autonomous-marketing"
  * Endpoint que genera el plan semanal automático
  * El sistema decide qué, cuándo y dónde postear
  */
+
+export const dynamic = 'force-dynamic'
 export async function GET() {
   try {
     const system = new AutonomousMarketingSystem()

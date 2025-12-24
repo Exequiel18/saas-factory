@@ -10,6 +10,8 @@ import { getErrorMessage } from "@/lib/utils"
  * - Scheduled task
  * - Manualmente para testing
  */
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
   try {
     // Verificar autorización (opcional: agregar API key)

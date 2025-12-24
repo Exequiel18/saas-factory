@@ -6,6 +6,8 @@ import { globalGrowthHacker } from "@/lib/growth-hacking"
 /**
  * 🚀 Growth Hacking Control Center
  */
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
     try {
         const session = await getServerSession(authOptions)

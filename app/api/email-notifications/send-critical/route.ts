@@ -10,6 +10,8 @@ import { getErrorMessage } from "@/lib/utils"
  * - Máximo 1 por semana
  * - Se puede llamar desde cron
  */
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
   try {
     // Verificar autorización (opcional: agregar API key)

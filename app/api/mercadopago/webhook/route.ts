@@ -11,6 +11,8 @@ import { sendInvoiceEmail } from "@/lib/billing/email";
  * It expects the raw request body to verify the HMAC signature.
  * Supported events: payment.created, payment.refunded, subscription.created, subscription.updated, etc.
  */
+
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
   const secret = process.env.MERCADO_PAGO_WEBHOOK_SECRET;
   if (!secret) {
