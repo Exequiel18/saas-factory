@@ -72,11 +72,15 @@ export async function GET() {
 
             const paywallHits = paywallResult.count || 0
 
-        if ((paywallHits || 0) > 0) {
-            await sendSignalToN8n("sales_intent_loop", {
-                hits: paywallHits,
-                message: `Detected ${paywallHits} paywall blocks in the last hour. Humans are hungry for the tool.`
-            })
+            if (paywallHits > 0) {
+                await sendSignalToN8n("sales_intent_loop", {
+                    hits: paywallHits,
+                    message: `Detected ${paywallHits} paywall blocks in the last hour. Humans are hungry for the tool.`
+                })
+            }
+        } catch (dbError) {
+            // Si hay error de DB, continuamos sin fallar
+            logs.push(`DB check skipped: ${dbError instanceof Error ? dbError.message : 'Unknown error'}`)
         }
 
         // --- FINALIZAR LATIDO ---
