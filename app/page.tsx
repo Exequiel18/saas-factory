@@ -170,7 +170,6 @@ export default function Home() {
 
           {/* Main Headline - Ultra Mejorado */}
           <motion.div
-            style={{ opacity, scale }}
             className="text-center mb-16"
           >
             <motion.h1 
