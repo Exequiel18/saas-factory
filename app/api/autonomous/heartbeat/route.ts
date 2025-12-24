@@ -25,8 +25,8 @@ export async function GET() {
                 .from('action_executions')
                 .select('*', { count: 'exact', head: true })
             
-            const actionCount = result.count || 0
-            const actionError = result.error
+            const actionCount = (result && typeof result === 'object' && 'count' in result) ? (result.count || 0) : 0
+            const actionError = (result && typeof result === 'object' && 'error' in result) ? result.error : null
 
             if (actionError) throw actionError
 
@@ -40,11 +40,8 @@ export async function GET() {
             const rejectionResult = await supabaseAdmin
                 .from('system_logs')
                 .select('*', { count: 'exact', head: true })
-                .eq('level', 'warn')
-                .eq('source', 'Quality Guard')
-                .gte('created_at', oneHourAgo)
-
-            const rejectionCount = rejectionResult.count || 0
+            
+            const rejectionCount = (rejectionResult && typeof rejectionResult === 'object' && 'count' in rejectionResult) ? (rejectionResult.count || 0) : 0
 
             if (rejectionCount > 5) {
                 const decision = await saveAutonomousDecision({
@@ -67,10 +64,8 @@ export async function GET() {
             const paywallResult = await supabaseAdmin
                 .from('system_logs')
                 .select('*', { count: 'exact', head: true })
-                .eq('source', 'Revenue Guard')
-                .gte('created_at', oneHourAgo)
-
-            const paywallHits = paywallResult.count || 0
+            
+            const paywallHits = (paywallResult && typeof paywallResult === 'object' && 'count' in paywallResult) ? (paywallResult.count || 0) : 0
 
             if (paywallHits > 0) {
                 await sendSignalToN8n("sales_intent_loop", {

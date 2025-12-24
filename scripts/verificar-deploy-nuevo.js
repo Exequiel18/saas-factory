@@ -5,7 +5,7 @@
 const https = require('https')
 
 const VERCEL_TOKEN = '9DcHcwyLkRUzRg5RCVTlWpHc'
-const DEPLOYMENT_ID = 'dpl_BzmHmCTbehenvS11XSVdfei2rqyJ'
+const DEPLOYMENT_ID = 'dpl_Bo2YzKiLpmq12nGTphyS3SEkxGpi'
 
 function makeRequest(hostname, path, method = 'GET') {
   return new Promise((resolve, reject) => {
