@@ -1,0 +1,234 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  referralCode  String? // Código usado al registrarse
+  referredBy    String? // ID del usuario que lo refirió
+  credits       Float     @default(0) // Créditos ganados por referidos
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts      Account[]
+  sessions      Session[]
+  organizations OrganizationMember[]
+  referrals     User[]               @relation("UserReferrals")
+  referrer      User?                @relation("UserReferrals", fields: [referredBy], references: [id])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Organization {
+  id        String   @id @default(cuid())
+  name      String
+  slug      String   @unique
+  logo      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  members       OrganizationMember[]
+  subscriptions Subscription[]
+}
+
+model OrganizationMember {
+  id             String   @id @default(cuid())
+  organizationId String
+  userId         String
+  role           String   @default("member") // owner, admin, member
+  createdAt      DateTime @default(now())
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([organizationId, userId])
+}
+
+model Subscription {
+  id                          String    @id @default(cuid())
+  organizationId              String    @unique
+  stripeCustomerId            String?   @unique
+  stripeSubscriptionId        String?   @unique
+  stripePriceId               String?
+  mercadoPagoPreferenceId     String?   @unique
+  mercadoPagoSubscriptionId   String?   @unique
+  mercadoPagoCustomerId       String?
+  paymentProvider             String    @default("stripe") // stripe, mercado_pago
+  stripeCurrentPeriodEnd      DateTime?
+  mercadoPagoCurrentPeriodEnd DateTime?
+  status                      String    @default("inactive") // active, canceled, past_due, trialing
+  plan                        String    @default("free") // free, pro, enterprise
+  amount                      Float?    @default(0)
+  currency                    String    @default("USD")
+  isTest                      Boolean   @default(false) // Indica si es una suscripción de prueba/simulación
+  createdAt                   DateTime  @default(now())
+  updatedAt                   DateTime  @updatedAt
+  // New fields for billing enhancements
+  couponId                    String?
+  renewalDate                 DateTime?
+  taxAmount                   Float?
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  payments     Payment[]
+  invoices     Invoice[]
+  coupon       Coupon? @relation(fields: [couponId], references: [id])
+
+  @@index([stripeCustomerId])
+  @@index([stripeSubscriptionId])
+  @@index([mercadoPagoPreferenceId])
+  @@index([mercadoPagoSubscriptionId])
+}
+
+model Payment {
+  id                String   @id @default(cuid())
+  subscriptionId    String?
+  amount            Float
+  currency          String   @default("USD")
+  status            String // pending, approved, rejected, refunded
+  paymentMethod     String // stripe, mercado_pago, transfer
+  paymentProviderId String? // ID del pago en el proveedor
+  description       String?
+  isTest            Boolean  @default(false) // Indica si es un pago de prueba/simulación
+  metadata          String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  subscription Subscription? @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+
+  @@index([subscriptionId])
+  @@index([status])
+  @@index([paymentProviderId])
+}
+
+model SystemLog {
+  id        String   @id @default(cuid())
+  level     String   @default("info") // info, warning, error, success
+  source    String // component name, e.g., "business_evaluator"
+  message   String
+  metadata  String?
+  createdAt DateTime @default(now())
+
+  @@index([source])
+  @@index([level])
+  @@index([createdAt])
+}
+
+model Expense {
+  id             String   @id @default(cuid())
+  organizationId String
+  amount         Float
+  currency       String   @default("USD")
+  category       String?
+  description    String?
+  date           DateTime @default(now())
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([organizationId])
+}
+
+model Lead {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  company   String?
+  website   String?
+  niche     String?
+  source    String   @default("B2B_Hunter")
+  revenue   String?
+  stack     String?
+  status    String   @default("new") // new, contacted, interested, converted, rejected
+  quality   Int      @default(0) // 0-100
+  metadata  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([niche])
+}
+
+model Invoice {
+  id               String   @id @default(cuid())
+  subscriptionId   String
+  subscription     Subscription @relation(fields: [subscriptionId], references: [id])
+  number           String   @unique
+  issuedAt         DateTime @default(now())
+  dueDate          DateTime?
+  totalAmount      Float
+  taxAmount        Float?
+  currency         String   @default("USD")
+  pdfUrl           String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model PaymentEvent {
+  id               String   @id @default(cuid())
+  paymentId        String
+  type             String   // charge, refund, cancel, etc.
+  status           String   // pending, succeeded, failed
+  amount           Float
+  currency         String   @default("USD")
+  provider         String   // mercado_pago, stripe
+  providerEventId  String?
+  createdAt        DateTime @default(now())
+}
+
+model Coupon {
+  id                String   @id @default(cuid())
+  code              String   @unique
+  discountPercentage Float?
+  discountAmount    Float?
+  expiresAt         DateTime?
+  usageLimit        Int?
+  usedCount         Int @default(0)
+  createdAt         DateTime @default(now())
+
+  subscriptions     Subscription[]
+}

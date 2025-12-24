@@ -1,0 +1,17 @@
+{
+    "buildCommand": "npm run build",
+    "outputDirectory": ".next",
+    "devCommand": "npm run dev",
+    "installCommand": "npm install --legacy-peer-deps",
+    "framework": "nextjs",
+    "crons": [
+        {
+            "path": "/api/alerts/generate",
+            "schedule": "0 9 * * *"
+        },
+        {
+            "path": "/api/autonomous/evaluate",
+            "schedule": "0 10 * * 1"
+        }
+    ]
+}

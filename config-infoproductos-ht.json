@@ -1,0 +1,16 @@
+{
+  "name": "Infoproductos High-Ticket",
+  "targets": [
+    {
+      "name": "Mastermind Group",
+      "niche": "Educación",
+      "revenue": "$300k/mo"
+    },
+    {
+      "name": "Expert Course",
+      "niche": "Mentoria",
+      "revenue": "$150k/mo"
+    }
+  ],
+  "painPrefix": "embudos de venta manuales que no escalan sin el experto"
+}

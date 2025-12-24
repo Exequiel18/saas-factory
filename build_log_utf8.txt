@@ -1,0 +1,1981 @@
+﻿
+> saas-factory@1.0.0 build
+> next build
+
+  Ôû▓ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ Ô£ô Compiled successfully
+   Skipping validation of types
+   Skipping linting
+   Collecting page data ...
+   Generating static pages (0/85) ...
+npm.cmd : [Autonomous Heartbeat] Failed: TypeError: i.pR.from(...).select(...).eq is not a function
+En línea: 1 Carácter: 99
++ ... $env:PATH"; & "C:\Users\Exequiel rogers\Desktop\Nueva carpeta\bin\nod ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([Autonomous Hea... not a function:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at c (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\autonomous\heartbeat\route.js:1:870)
+    at async C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38411
+    at async e_.execute (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:27880)
+    at async e_.handle (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:39943)
+    at async exportAppRoute (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\export\routes\app-route.js:77:26)
+    at async exportPageImpl (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\export\worker.js:175:20)
+    at async Span.traceAsyncFn (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\trace\trace.js:154:20)
+    at async Object.exportPage (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\export\worker.js:237:20)
+Business evaluation error: n [Error]: Dynamic server usage: Route /api/business/evaluate couldn't be rendered 
+statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8948.js:1:37220)
+    at d (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:27870)
+    at s (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:20859)
+    at m (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\business\evaluate\route.js:1:1328)
+    at C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\Exequiel rogers\Desktop\Nueva carpeta\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854) {
+  description: "Route /api/business/evaluate couldn't be rendered statically because it used `headers`. See more info 
+here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+prisma:query SELECT `main`.`Organization`.`id`, `main`.`Organization`.`name`, `main`.`Organization`.`slug`, `main`.`Organization`.`logo`, `main`.`Organization`.`createdAt`, `main`.`Organization`.`updatedAt` FROM `main`.`Organization` WHERE 1=1 LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`SystemLog`.`id` FROM `main`.`SystemLog` WHERE (`main`.`SystemLog`.`source` = ? AND `main`.`SystemLog`.`createdAt` >= ?) LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`SystemLog`.`id` FROM `main`.`SystemLog` WHERE (`main`.`SystemLog`.`source` = ? AND `main`.`SystemLog`.`metadata` LIKE ? AND `main`.`SystemLog`.`createdAt` >= ?) LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`User`.`id` FROM `main`.`User` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`SystemLog`.`id`, `main`.`SystemLog`.`level`, `main`.`SystemLog`.`source`, `main`.`SystemLog`.`message`, `main`.`SystemLog`.`metadata`, `main`.`SystemLog`.`createdAt` FROM `main`.`SystemLog` WHERE (`main`.`SystemLog`.`source` = ? AND `main`.`SystemLog`.`metadata` LIKE ? AND `main`.`SystemLog`.`createdAt` >= ?) LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`SystemLog`.`id` FROM `main`.`SystemLog` WHERE (`main`.`SystemLog`.`source` = ? AND `main`.`SystemLog`.`createdAt` >= ?) LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`SystemLog`.`id` FROM `main`.`SystemLog` WHERE (`main`.`SystemLog`.`source` = ? AND `main`.`SystemLog`.`createdAt` >= ?) LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`SystemLog`.`id` FROM `main`.`SystemLog` WHERE (`main`.`SystemLog`.`source` = ? AND `main`.`SystemLog`.`level` = ? AND `main`.`SystemLog`.`metadata` LIKE ? AND `main`.`SystemLog`.`createdAt` >= ?) LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`SystemLog`.`id`, `main`.`SystemLog`.`level`, `main`.`SystemLog`.`source`, `main`.`SystemLog`.`message`, `main`.`SystemLog`.`metadata`, `main`.`SystemLog`.`createdAt` FROM `main`.`SystemLog` WHERE (`main`.`SystemLog`.`source` = ? AND `main`.`SystemLog`.`metadata` LIKE ? AND `main`.`SystemLog`.`createdAt` >= ?) ORDER BY `main`.`SystemLog`.`createdAt` ASC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`SystemLog`.`id`, `main`.`SystemLog`.`level`, `main`.`SystemLog`.`source`, `main`.`SystemLog`.`message`, `main`.`SystemLog`.`metadata`, `main`.`SystemLog`.`createdAt` FROM `main`.`SystemLog` WHERE (`main`.`SystemLog`.`source` = ? AND `main`.`SystemLog`.`metadata` LIKE ? AND `main`.`SystemLog`.`createdAt` >= ? AND `main`.`SystemLog`.`createdAt` < ?) LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`User`.`id` FROM `main`.`User` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`Subscription`.`id` FROM `main`.`Subscription` WHERE `main`.`Subscription`.`status` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT SUM(`amount`) FROM (SELECT `main`.`Payment`.`amount` FROM `main`.`Payment` LEFT JOIN `main`.`Subscription` AS `j1` ON (`j1`.`id`) = (`main`.`Payment`.`subscriptionId`) WHERE ((`j1`.`organizationId` = ? AND (`j1`.`id` IS NOT NULL)) AND `main`.`Payment`.`status` = ?) LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`Payment`.`id`, `main`.`Payment`.`subscriptionId`, `main`.`Payment`.`amount`, `main`.`Payment`.`currency`, `main`.`Payment`.`status`, `main`.`Payment`.`paymentMethod`, `main`.`Payment`.`paymentProviderId`, `main`.`Payment`.`description`, `main`.`Payment`.`isTest`, `main`.`Payment`.`metadata`, `main`.`Payment`.`createdAt`, `main`.`Payment`.`updatedAt` FROM `main`.`Payment` LEFT JOIN `main`.`Subscription` AS `j1` ON (`j1`.`id`) = (`main`.`Payment`.`subscriptionId`) WHERE ((`j1`.`organizationId` = ? AND (`j1`.`id` IS NOT NULL)) AND `main`.`Payment`.`status` = ?) ORDER BY `main`.`Payment`.`createdAt` DESC LIMIT ? OFFSET ?
+Critical metrics error: n [Error]: Dynamic server usage: Route /api/metrics/critical couldn't be rendered statically 
+because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8948.js:1:37220)
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\mercadopago\webhook\route.js:1:6902)
+    at s (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:20859)
+    at m (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\metrics\critical\route.js:1:1319)
+    at C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\Exequiel rogers\Desktop\Nueva carpeta\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854) {
+  description: "Route /api/metrics/critical couldn't be rendered statically because it used `headers`. See more info 
+here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Mercado Pago status error: n [Error]: Dynamic server usage: Route /api/mercadopago/status couldn't be rendered 
+statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8948.js:1:37220)
+    at d (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:27870)
+    at s (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:20859)
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\mercadopago\status\route.js:1:1304)
+    at C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\Exequiel rogers\Desktop\Nueva carpeta\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854) {
+  description: "Route /api/mercadopago/status couldn't be rendered statically because it used `headers`. See more info 
+here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Metrics API Error: n [Error]: Dynamic server usage: Route /api/metrics couldn't be rendered statically because it used 
+`headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8948.js:1:37220)
+    at d (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:27870)
+    at s (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:20859)
+    at m (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\metrics\route.js:1:1328)
+    at C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\Exequiel rogers\Desktop\Nueva carpeta\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854) {
+  description: "Route /api/metrics couldn't be rendered statically because it used `headers`. See more info here: 
+https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+prisma:query SELECT 1
+   Generating static pages (21/85) 
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`User`.`id` FROM `main`.`User` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`Organization`.`id` FROM `main`.`Organization` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`Subscription`.`id` FROM `main`.`Subscription` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`Payment`.`id` FROM `main`.`Payment` WHERE `main`.`Payment`.`status` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT SUM(`amount`) FROM (SELECT `main`.`Payment`.`amount` FROM `main`.`Payment` WHERE `main`.`Payment`.`status` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) FROM (SELECT `main`.`Subscription`.`id` FROM `main`.`Subscription` WHERE `main`.`Subscription`.`status` = ? LIMIT ? OFFSET ?) AS `sub`
+Upsell check error: n [Error]: Dynamic server usage: Route /api/upsell/check couldn't be rendered statically because 
+it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8948.js:1:37220)
+    at d (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:27870)
+    at s (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:20859)
+    at x (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\upsell\check\route.js:1:1328)
+    at C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\Exequiel rogers\Desktop\Nueva carpeta\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854) {
+  description: "Route /api/upsell/check couldn't be rendered statically because it used `headers`. See more info here: 
+https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Get alerts error: n [Error]: Dynamic server usage: Route /api/alerts/unread couldn't be rendered statically because it 
+used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8948.js:1:37220)
+    at d (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:27870)
+    at s (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:20859)
+    at c (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\alerts\unread\route.js:1:1314)
+    at C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\Exequiel rogers\Desktop\Nueva carpeta\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854) {
+  description: "Route /api/alerts/unread couldn't be rendered statically because it used `headers`. See more info 
+here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Notifications fetch error: n [Error]: Dynamic server usage: Route /api/notifications couldn't be rendered statically 
+because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8948.js:1:37220)
+    at d (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:27870)
+    at s (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:20859)
+    at c (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\notifications\route.js:1:1293)
+    at C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\Exequiel rogers\Desktop\Nueva carpeta\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854) {
+  description: "Route /api/notifications couldn't be rendered statically because it used `headers`. See more info 
+here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+prisma:query SELECT `main`.`User`.`id`, `main`.`User`.`name`, `main`.`User`.`email`, `main`.`User`.`emailVerified`, `main`.`User`.`image`, `main`.`User`.`password`, `main`.`User`.`referralCode`, `main`.`User`.`referredBy`, `main`.`User`.`credits`, `main`.`User`.`createdAt`, `main`.`User`.`updatedAt` FROM `main`.`User` WHERE (`main`.`User`.`id`) NOT IN (SELECT `t1`.`userId` FROM `main`.`OrganizationMember` AS `t1` LEFT JOIN `main`.`Organization` AS `j2` ON (`j2`.`id`) = (`t1`.`organizationId`) WHERE ((`j2`.`id`) IN (SELECT `t3`.`organizationId` FROM `main`.`Subscription` AS `t3` WHERE (`t3`.`status` = ? AND `t3`.`organizationId` IS NOT NULL)) AND (`j2`.`id` IS NOT NULL) AND `t1`.`userId` IS NOT NULL)) ORDER BY `main`.`User`.`createdAt` DESC LIMIT ? OFFSET ?
+   Generating static pages (42/85) 
+Predictive analytics error: n [Error]: Dynamic server usage: Route /api/analytics/predictive couldn't be rendered 
+statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8948.js:1:37220)
+    at d (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:27870)
+    at s (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\3643.js:25:20859)
+    at l (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\app\api\analytics\predictive\route.js:1:1340)
+    at C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\Exequiel rogers\Desktop\Nueva carpeta\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854) {
+  description: "Route /api/analytics/predictive couldn't be rendered statically because it used `headers`. See more 
+info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/comercio". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/ceo-assistant". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/contact". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/about". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/auth/signin". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/dashboard/credits". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/dashboard/analytics". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/auth/signup". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/dashboard/metrics". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/dashboard/goal". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/blog/100k-in-30-days". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/dashboard/metrics-calculator". Read more: 
+https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/dashboard/referrals". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/blog". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/dashboard/integrations". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/calculator". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/dashboard". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+   Generating static pages (63/85) 
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/features". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/faq". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/audit". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/dashboard/payments". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/dashboard/organizations/new". Read more: 
+https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/regalo-mama". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/legal/privacy". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/que-hacemos". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/solutions". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/roi". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/legal/terms". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/lifetime-deal". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/medico". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/pricing". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/success". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547) {
+  digest: '651827263'
+}
+
+Error occurred prerendering page "/dashboard/settings". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/sync". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/testimonials". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/war-room". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of undefined (reading 'map')
+    at h (C:\Users\Exequiel rogers\Desktop\Nueva carpeta\.next\server\chunks\8527.js:1:8278)
+    at nj (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (C:\Users\Exequiel rogers\Desktop\Nueva 
+carpeta\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+ Ô£ô Generating static pages (85/85)
+
+> Export encountered errors on following paths:
+	/_not-found/page: /_not-found
+	/about/page: /about
+	/audit/page: /audit
+	/auth/signin/page: /auth/signin
+	/auth/signup/page: /auth/signup
+	/blog/100k-in-30-days/page: /blog/100k-in-30-days
+	/blog/page: /blog
+	/calculator/page: /calculator
+	/ceo-assistant/page: /ceo-assistant
+	/comercio/page: /comercio
+	/contact/page: /contact
+	/dashboard/analytics/page: /dashboard/analytics
+	/dashboard/credits/page: /dashboard/credits
+	/dashboard/goal/page: /dashboard/goal
+	/dashboard/integrations/page: /dashboard/integrations
+	/dashboard/metrics-calculator/page: /dashboard/metrics-calculator
+	/dashboard/metrics/page: /dashboard/metrics
+	/dashboard/organizations/new/page: /dashboard/organizations/new
+	/dashboard/page: /dashboard
+	/dashboard/payments/page: /dashboard/payments
+	/dashboard/referrals/page: /dashboard/referrals
+	/dashboard/settings/page: /dashboard/settings
+	/faq/page: /faq
+	/features/page: /features
+	/legal/privacy/page: /legal/privacy
+	/legal/terms/page: /legal/terms
+	/lifetime-deal/page: /lifetime-deal
+	/medico/page: /medico
+	/page: /
+	/pricing/page: /pricing
+	/que-hacemos/page: /que-hacemos
+	/regalo-mama/page: /regalo-mama
+	/roi/page: /roi
+	/solutions/page: /solutions
+	/success/page: /success
+	/sync/page: /sync
+	/testimonials/page: /testimonials
+	/war-room/page: /war-room

@@ -1,0 +1,16 @@
+{
+  "name": "Suplementos DTC",
+  "targets": [
+    {
+      "name": "FitFuel",
+      "niche": "Suplementos",
+      "revenue": "$400k/mo"
+    },
+    {
+      "name": "MusclePro",
+      "niche": "Nutrición",
+      "revenue": "$1.2M/mo"
+    }
+  ],
+  "painPrefix": "baja LTV y retención de clientes"
+}
