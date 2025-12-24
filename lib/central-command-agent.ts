@@ -298,6 +298,40 @@ export class CentralCommandAgent {
       }
     }
   }
+
+  /**
+   * Estado del auto-healing agent (NUEVO)
+   */
+  private async getAutoHealingStatus(): Promise<SystemStatus> {
+    const autoHealing = getAutoHealingAgent()
+    const status = autoHealing.getStatus()
+    
+    return {
+      id: 'auto_healing',
+      name: 'Auto-Healing Agent',
+      status: status.errors > 0 ? 'error' : status.warnings > 0 ? 'idle' : 'running',
+      lastActivity: new Date(),
+      metrics: {
+        total: status.totalChecks,
+        today: status.totalChecks,
+        thisWeek: status.totalChecks,
+        successRate: status.totalChecks > 0 ? (status.ok / status.totalChecks) * 100 : 100
+      },
+      details: {
+        isRunning: status.isRunning,
+        ok: status.ok,
+        warnings: status.warnings,
+        errors: status.errors,
+        checks: status.checks.map(c => ({
+          category: c.category,
+          name: c.name,
+          status: c.status,
+          message: c.message,
+          autoFixable: c.autoFixable
+        }))
+      }
+    }
+  }
   
   /**
    * Registra un evento en tiempo real
