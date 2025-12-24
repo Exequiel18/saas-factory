@@ -1,0 +1,18 @@
+https://TU-DOMINIO.com/api/mercadopago/webhook
+
+INSTRUCCIONES:
+1. Reemplaza "TU-DOMINIO.com" con tu dominio real de Vercel
+2. Copia la URL completa
+3. Pégala en la configuración del webhook de N8N
+
+EJEMPLO:
+Si tu proyecto es "saas-factory.vercel.app", la URL sería:
+https://saas-factory.vercel.app/api/mercadopago/webhook
+
+EVENTOS QUE PROCESA:
+- payment.created
+- payment.updated
+- payment.approved
+- payment.rejected
+
+

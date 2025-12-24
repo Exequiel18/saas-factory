@@ -1,0 +1,11 @@
+{
+  "name": "Elite users for alpha-investments",
+  "targets": [
+    {
+      "name": "Target A",
+      "niche": "General",
+      "revenue": "Unknown"
+    }
+  ],
+  "painPrefix": "necesidad de optimización"
+}

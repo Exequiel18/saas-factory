@@ -1,0 +1,6 @@
+{
+    "profitThreshold": -5000,
+    "pivotOnFatigue": true,
+    "pauseOnError": true,
+    "maxMemory": 300
+}
