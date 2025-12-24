@@ -9,6 +9,7 @@
 
 import { prisma } from "./prisma"
 import { AutonomousMarketingSystem } from "./autonomous-marketing"
+import { DeploymentMonitorAgent } from "./deployment-monitor-agent"
 
 export interface SystemStatus {
   id: string
@@ -37,6 +38,7 @@ export interface RealTimeEvent {
 export class CentralCommandAgent {
   private events: RealTimeEvent[] = []
   private maxEvents = 100 // Mantener últimos 100 eventos
+  private deploymentMonitor: DeploymentMonitorAgent | null = null
   
   /**
    * Obtiene el estado de todos los sistemas
@@ -63,6 +65,10 @@ export class CentralCommandAgent {
     // 5. Sistema de Alertas
     const alertas = await this.getAlertasStatus()
     systems.push(alertas)
+    
+    // 6. Monitor de Deployment (NUEVO - detecta problemas automáticamente)
+    const deployment = await this.getDeploymentStatus()
+    systems.push(deployment)
     
     return systems
   }
@@ -238,6 +244,55 @@ export class CentralCommandAgent {
       }
     }
   }
+
+  /**
+   * Estado del monitor de deployment (NUEVO)
+   */
+  private async getDeploymentStatus(): Promise<SystemStatus> {
+    if (!this.deploymentMonitor) {
+      this.deploymentMonitor = new DeploymentMonitorAgent()
+      this.deploymentMonitor.startMonitoring()
+    }
+
+    const status = this.deploymentMonitor.getStatus()
+    const issues = status.issues
+
+    // Si hay problemas críticos, intentar solucionarlos automáticamente
+    const criticalIssues = issues.filter(i => i.severity === 'critical' && i.autoFixable)
+    if (criticalIssues.length > 0) {
+      // Solucionar automáticamente en background
+      this.deploymentMonitor.autoFix().catch(err => {
+        this.recordEvent({
+          system: 'deployment_monitor',
+          type: 'error',
+          message: `Error al auto-solucionar: ${err.message}`,
+          data: { error: err }
+        })
+      })
+    }
+
+    return {
+      id: 'deployment_monitor',
+      name: 'Monitor de Deployment',
+      status: status.criticalIssues > 0 ? 'error' : status.warnings > 0 ? 'idle' : 'running',
+      lastActivity: status.lastCheck || new Date(),
+      metrics: {
+        total: issues.length,
+        today: issues.length,
+        thisWeek: issues.length,
+        successRate: issues.length === 0 ? 100 : ((issues.length - status.criticalIssues) / issues.length) * 100
+      },
+      details: {
+        criticalIssues: status.criticalIssues,
+        warnings: status.warnings,
+        issues: issues.map(i => ({
+          type: i.type,
+          message: i.message,
+          autoFixable: i.autoFixable
+        }))
+      }
+    }
+  }
   
   /**
    * Registra un evento en tiempo real
@@ -298,6 +353,41 @@ export class CentralCommandAgent {
   startContinuousMonitoring() {
     // En producción, esto sería un loop que monitorea constantemente
     console.log('🧠 Central Command Agent: Monitoreo continuo iniciado')
+    
+    // Iniciar monitor de deployment
+    this.deploymentMonitor = new DeploymentMonitorAgent()
+    this.deploymentMonitor.startMonitoring()
+    
+    this.recordEvent({
+      system: 'central',
+      type: 'info',
+      message: 'Monitor de Deployment iniciado - Detecta y soluciona problemas automáticamente',
+      data: { timestamp: new Date() }
+    })
+    
+    // Verificar deployment cada 2 minutos
+    setInterval(async () => {
+      try {
+        const deploymentStatus = await this.getDeploymentStatus()
+        const issues = deploymentStatus.details.issues || []
+        
+        if (issues.length > 0) {
+          this.recordEvent({
+            system: 'deployment_monitor',
+            type: issues.some(i => i.type.includes('critical')) ? 'error' : 'warning',
+            message: `${issues.length} problema(s) detectado(s) en deployment`,
+            data: { issues }
+          })
+        }
+      } catch (error) {
+        this.recordEvent({
+          system: 'deployment_monitor',
+          type: 'error',
+          message: `Error verificando deployment: ${error instanceof Error ? error.message : 'Unknown'}`,
+          data: { error }
+        })
+      }
+    }, 120000) // Cada 2 minutos
     
     // Simular eventos periódicos
     setInterval(() => {

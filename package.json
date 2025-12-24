@@ -10,6 +10,8 @@
         "postinstall": "prisma generate",
         "db:push": "prisma db push",
         "command-center": "node scripts/start-command-center.js",
+    "monitor-deployment": "node scripts/iniciar-monitor-deployment.js",
+    "fix-deployment": "node scripts/solucionar-todo-automatico.js",
         "marketing-plan": "node scripts/autonomous-marketing-executor.js",
         "deploy:check": "node scripts/deploy-automatico.js",
         "deploy:verify": "node scripts/verificar-sistema.js",
