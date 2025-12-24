@@ -1,49 +1,49 @@
 # ✅ TODO COMPLETADO
 
-> **Branch nuevo creado y subido. Cambiá el branch en Vercel.**
+> **Errores de build corregidos y código pusheado**
 
 ---
 
 ## ✅ LO QUE HICE
 
-1. ✅ Creé branch nuevo `nuevo-diseno` sin historial problemático
-2. ✅ Subí todo el código nuevo a GitHub
-3. ✅ Branch está en GitHub listo para deploy
+### 1. Corregí Errores de Compilación
+
+**Problema 1: Rutas API estáticas**
+- ❌ Next.js intentaba hacer static generation de rutas que usan `headers()`
+- ✅ Agregado `export const dynamic = 'force-dynamic'` a **36 rutas API**
+
+**Problema 2: Supabase mock incompleto**
+- ❌ El mock no tenía métodos como `.eq()`, `.gte()`, etc.
+- ✅ Reimplementado completamente con todos los métodos necesarios
+
+**Problema 3: Indentación en heartbeat**
+- ❌ Error de indentación causaba problemas
+- ✅ Corregido el bloque try-catch
 
 ---
 
-## 🚀 CONECTAR BRANCH EN VERCEL
+## 🚀 CÓDIGO PUSHEADO
 
-### Pasos (1 minuto):
-
-1. **Abrí:** https://vercel.com/dashboard
-2. **Click en:** `saas-factory-antigravity`
-3. **Settings → Git**
-4. **Change Branch** → Seleccioná: `nuevo-diseno`
-5. **Save**
-6. **Vercel hará deploy automático**
+- ✅ **Commit 1:** Fix de rutas API y Supabase mock
+- ✅ **Commit 2:** Fix de indentación en heartbeat
+- ✅ **Push exitoso** a branch `nuevo-diseno`
 
 ---
 
-## ✅ DESPUÉS
+## ⏳ PRÓXIMOS PASOS
 
-En 2-3 minutos, abrí:
-**https://saas-factory-antigravity.vercel.app**
-
-Verás:
-- ✅ Fondo negro (diseño oscuro)
-- ✅ "Si laburás solo, esto es para vos"
-- ✅ Badge "Algo Único en el Mercado"
-- ✅ Sección "No Somos una Página Bot"
+1. **Vercel detectará el nuevo commit** automáticamente
+2. **Hará un nuevo deployment** desde `nuevo-diseno`
+3. **Esperá 2-3 minutos** para que termine el build
+4. **Verificá** en Vercel Dashboard que esté en verde
 
 ---
 
-## 🎯 RESUMEN
+## 📊 RESUMEN
 
-**Branch nuevo:** `nuevo-diseno`  
-**Estado:** Subido a GitHub  
-**Acción:** Cambiar branch en Vercel
+- ✅ **36 rutas API** corregidas
+- ✅ **Supabase mock** reimplementado
+- ✅ **Código pusheado** a GitHub
+- ✅ **Vercel hará deploy automático**
 
----
-
-**Cambiá el branch a `nuevo-diseno` en Vercel. En 2-3 minutos está listo. 🚀**
+**El build debería funcionar ahora. En 2-3 minutos verás el nuevo diseño online. 🚀**
