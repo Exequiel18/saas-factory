@@ -86,7 +86,7 @@ export function SuenoPromesa() {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="bg-gradient-to-br from-slate-900/90 via-black to-slate-900/90 text-white rounded-3xl p-12 md:p-16 relative overflow-hidden border border-white/10"
+          <div className="bg-gradient-to-br from-slate-900/90 via-black to-slate-900/90 text-white rounded-3xl p-12 md:p-16 relative overflow-hidden border border-white/10">
             {/* Grid Pattern */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:64px_64px]" />
             
